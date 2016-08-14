@@ -59,6 +59,9 @@
         } else if (d[originKey] === 'may1') {
           year = getYear(currentDate, 6, 1);
           d.sortDate = new Date(year, 4, 1).toISOString();
+        } else if (d[originKey] === 'oct1') {
+          year = getYear(currentDate, 6, 1);
+          d.sortDate = new Date(year, 9, 1).toISOString();
         } else if (d[originKey] === 'jan1') {
           year = getYear(currentDate, 6, 1);
           d.sortDate = new Date(year, 0, 1).toISOString();
