@@ -289,6 +289,36 @@ body {
   margin: 5px 0;
 }
 
+.v2-announcement {
+  position: fixed;
+  right: 0;
+  top: 80px;
+  z-index: 999;
+
+  img {
+    width: 360px;
+    height: auto;
+  }
+
+  @media (max-width: 1380px) {
+    img {
+      width: 245px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    z-index: inherit;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
 @media(min-width: 768px) {
 
 	.page-header h1 {
